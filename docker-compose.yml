@@ -15,8 +15,6 @@ services:
     image: php:8.0-apache
     volumes:
       - ./html:/var/www/html
-    ports:
-      - 8081:80
     networks:
       - balancer
   web2:
@@ -24,8 +22,6 @@ services:
     image: php:8.0-apache
     volumes:
       - ./html:/var/www/html
-    ports:
-      - 8082:80
     networks:
       - balancer
   web3:
@@ -33,8 +29,6 @@ services:
     image: php:8.0-apache
     volumes:
       - ./html:/var/www/html
-    ports:
-      - 8083:80
     networks:
       - balancer
 
